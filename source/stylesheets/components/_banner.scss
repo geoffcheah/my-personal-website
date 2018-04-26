@@ -1,0 +1,25 @@
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(-225deg, rgba(0,0,0,0.2), rgba(0,0,0,0.1)), url("../../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: center;
+  color: white;
+
+}
+
+.banner-content {
+  padding: 10px;
+  h1 {
+    font-size: 54px;
+  }
+  h3 {
+    font-size: 38px;
+  }
+}
