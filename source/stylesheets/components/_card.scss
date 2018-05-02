@@ -1,11 +1,32 @@
 .about-card {
-  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  color: $card-text-color;
+}
 
+.about-header {
+  text-align: center;
+}
+
+.card-text {
   padding: 10px;
   margin: 10px;
 }
 
 .card-image {
   height: 300px;
-  width: 300px;
+  width: 500px;
+}
+
+.test-card {
+  width: 400px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
 }
