@@ -27,10 +27,15 @@
 .nav-links-flex-container {
   display: flex;
   justify-content: center;
-  text-decoration: underline;
 }
 
 .banner-nav-link {
   padding-left: 20px;
   padding-right: 20px;
+  color: white;
+  text-decoration: underline;
+  &:hover {
+    color: #F0544F;
+  }
+
 }
