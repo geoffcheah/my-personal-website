@@ -47,7 +47,7 @@
       <h4 class="about-header">Professional Swimming and the Olympics</h4>
       <div class="col-md-6">
         <div class="image-container">
-               <img class="card-image" src="https://at-hk.s3.amazonaws.com/i/20160819153716-GCheahpic_resized_750x500.jpg" alt="">
+              <%= image_tag "pro_swim.jpg", class: "card-image" %>
         </div>
       </div>
       <div class="col-md-6">
@@ -67,16 +67,35 @@
       </div>
       <div class="col-md-6">
         <div class="image-container">
-               <img class="card-image" src="https://images.unsplash.com/photo-1507941097613-9f2157b69235?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=72483d9b40b1ce1ed502440b000f6759&auto=format&fit=crop&w=1626&q=80" alt="">
+           <%= image_tag "demoday.jpg", class: "card-image" %>
         </div>
       </div>
     </div>
 </div>
 
-<div class="experience-container">
-  <a name="experience"></a>
-  <h1 class="section-header">Experience</h1>
+<div class="dark-wrapper">
+  <div class="experience-container">
+    <a name="experience"></a>
+    <h1 class="section-header">Experience</h1>
+    <div class="content-job-box">
+      <%= image_tag "lewagon_logo.png", class: "image-job" %>
+      <div class="text-job">
+        <span>Teaching Assistant || Apr 2018 - Present</span>
+        <ul>
+          <li>
+            Teaching students Full-Stack Web Development on subjects such as Ruby, Ruby on Rails, HTML, CSS and helping them to solve problems in their coding challenges
+          </li>
+          <li>
+            Specifically helping during the Ruby on Rails week on the Rails framework way, advanced routing, MVC, frontend and hosting and image upload. Also in the project week when students build their own MVPs to demo at Google Campus London.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
 
 
 
