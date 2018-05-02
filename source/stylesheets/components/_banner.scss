@@ -23,3 +23,14 @@
     font-size: 38px;
   }
 }
+
+.nav-links-flex-container {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
+.banner-nav-link {
+  padding-left: 20px;
+  padding-right: 20px;
+}
