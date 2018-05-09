@@ -77,23 +77,58 @@
   <div class="experience-container">
     <a name="experience"></a>
     <h1 class="section-header">Experience</h1>
-    <div class="content-job-box">
-      <%= image_tag "lewagon_logo.png", class: "image-job" %>
-      <div class="text-job">
-        <span>Teaching Assistant || Apr 2018 - Present</span>
-        <ul>
-          <li>
-            Teaching students Full-Stack Web Development on subjects such as Ruby, Ruby on Rails, HTML, CSS and helping them to solve problems in their coding challenges
-          </li>
-          <li>
-            Specifically helping during the Ruby on Rails week on the Rails framework way, advanced routing, MVC, frontend and hosting and image upload. Also in the project week when students build their own MVPs to demo at Google Campus London.
-          </li>
-        </ul>
-      </div>
+    <div class="nav-links-flex-container">
+      <h4 id="work-link" class="banner-nav-link">Work</h4>
+      <h4 id="swimming-link" class="banner-nav-link">Swimming</h4>
+      <h4 id="education-link" class="banner-nav-link">Education</h4>
     </div>
+    <div class="content-job-box">
+      <%= partial 'job_experience' %>
+      <%= partial 'swimming' %>
+      <%= partial 'education' %>
+
+    </div>
+
+  <div class="tabs">
+  <a class="tab active" href="#">
+    <h2>Work</h2>
+  </a>
+  <a class="tab" href="#">
+    <h2>Swimming</h2>
+  </a>
+  <a class="tab" href="#">
+    <h2>Education</h2>
+  </a>
+</div>
   </div>
 </div>
 
+<script>
+  const workNavLink = document.getElementById('work-link')
+  const swimmingNavLink = document.getElementById('swimming-link')
+  const educationNavLink = document.getElementById('education-link')
+  const educationBox = document.getElementById('education-content')
+  const workBox = document.getElementById('work-content')
+  const swimBox = document.getElementById('swim-content')
+  const contentJobBox = document.querySelector('.content-job-box')
+
+  workNavLink.addEventListener("click", (e) => {
+    console.log("work nav link event listener")
+  })
+
+  swimmingNavLink.addEventListener("click", (e) => {
+    console.log("swim nav link event listener")
+  })
+
+  educationNavLink.addEventListener("click", (e) => {
+    contentJobBox.insertAdjacentHTML('afterbegin', "<%= partial 'education' %>")
+    educationBox.classList.toggle('hidden')
+    console.log("education nav link event listener")
+  })
+
+
+
+</script>
 
 
 
