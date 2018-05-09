@@ -4,17 +4,40 @@
 }
 
 .experience-container {
-  color: white;
+  color: #EFF0F4;
+  // background-color: #A9B3CE;
   background-color: #272932;
+  // background-color: #EAEAEA;
   padding: 50px;
 }
 
 .image-job {
-  height: 70px;
+  width: 200px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
 .hidden {
   opacity: 0;
+}
+
+.swim-image {
+  height: 300px;
+}
+
+.text-job {
+  display: flex;
+  flex-direction: column;
+  background-color: #A9B3CE;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.image-flexbox {
+  display: flex;
+}
+
+.oscapes-link {
+  text-decoration: underline;
 }

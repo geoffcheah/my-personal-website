@@ -1,14 +1,16 @@
 <div id="education-content" class = "hidden">
-  <span><%= image_tag "lewagon_logo.png", class: "image-job" %></span>
-  <span><%= image_tag "oscapes_logo.png", class: "image-job" %></span>
   <div class="text-job">
+    <div class="col-md-6">
+      <%= image_tag "lewagon_logo.png", class: "image-job" %>
+      <%= image_tag "oscapes_logo.png", class: "image-job" %>
+    </div>
     <span>Full Stack Web Development Student ~ Jan 2018 -  Mar 2018</span>
     <ul>
       <li>
         9-week intensive full-stack development training in building web apps, learning coding best practice and development mindset
       </li>
       <li>
-        Built Oscapes (in team of 3) to help people find and plan their hiking trips in the UK. Demoed MVP at Google Campus London (www.oscapes.tech) (https://www.lewagon.com/demoday/123/oscapes)
+        Built Oscapes (in team of 3) to help people find and plan their hiking trips in the UK. <%= link_to "Demoed MVP at Google Campus London", "https://www.lewagon.com/demoday/123/oscapes",  class: "oscapes-link", target: "_blank" %>. Check the app out (not mobile-friendly yet): <%= link_to "Oscapes", "http://www.oscapes.tech", class: "oscapes-link", target: "_blank" %>
       </li>
       <li>
         Built CoachMySwim, a marketplace web app linking coaches and swimmers to improve swimming technique. Led team of three from idea conception, design to creation of the MVP
@@ -19,8 +21,11 @@
     </ul>
   </div>
 
-  <span><%= image_tag "stanford_logo.png", class: "image-job" %></span>
   <div class="text-job">
+    <div class="col-md-6">
+      <span><%= image_tag "stanford_logo.png", class: "image-job" %></span>
+    </div>
+
     <span>B.S. Earth Systems - Enery, Science and Technology ~ Class of 2013 </span>
     <ul>
       <li>
