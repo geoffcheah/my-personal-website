@@ -86,20 +86,7 @@
       <%= partial 'job_experience' %>
       <%= partial 'swimming' %>
       <%= partial 'education' %>
-
     </div>
-
-  <div class="tabs">
-  <a class="tab active" href="#">
-    <h2>Work</h2>
-  </a>
-  <a class="tab" href="#">
-    <h2>Swimming</h2>
-  </a>
-  <a class="tab" href="#">
-    <h2>Education</h2>
-  </a>
-</div>
   </div>
 </div>
 
@@ -113,20 +100,43 @@
   const contentJobBox = document.querySelector('.content-job-box')
 
   workNavLink.addEventListener("click", (e) => {
-    console.log("work nav link event listener")
+    if (!workBox.classList.contains("hidden")) {
+      swimBox.className = 'hidden'
+      educationBox.className = 'hidden'
+    } else if (educationBox.classList.contains("hidden")) {
+      swimBox.classList.toggle('hidden')
+      workBox.classList.toggle('hidden')
+    } else if (swimBox.classList.contains("hidden")) {
+      educationBox.classList.toggle('hidden')
+      workBox.classList.toggle('hidden')
+    }
   })
 
   swimmingNavLink.addEventListener("click", (e) => {
-    console.log("swim nav link event listener")
+    if (!swimBox.classList.contains("hidden")) {
+      educationBox.className = 'hidden'
+      workBox.className = 'hidden'
+    } else if (educationBox.classList.contains("hidden")) {
+      workBox.classList.toggle('hidden')
+      swimBox.classList.toggle('hidden')
+    } else if (workBox.classList.contains("hidden")) {
+      educationBox.classList.toggle('hidden')
+      swimBox.classList.toggle('hidden')
+    }
   })
 
   educationNavLink.addEventListener("click", (e) => {
-    contentJobBox.insertAdjacentHTML('afterbegin', "<%= partial 'education' %>")
-    educationBox.classList.toggle('hidden')
-    console.log("education nav link event listener")
+    if (!educationBox.classList.contains("hidden")) {
+      swimBox.className = 'hidden'
+      workBox.className = 'hidden'
+    } else if (workBox.classList.contains("hidden")) {
+      swimBox.classList.toggle('hidden')
+      educationBox.classList.toggle('hidden')
+    } else if (swimBox.classList.contains("hidden")) {
+      workBox.classList.toggle('hidden')
+      educationBox.classList.toggle('hidden')
+    }
   })
-
-
 
 </script>
 
